@@ -63,9 +63,11 @@ group :test do
   # Easy installation and use of chromedriver to run system tests with Chrome
   gem 'chromedriver-helper'
 
+  gem 'selenium-webdriver'
+
   # Rspec, Factory Data, Capybara capabilities
   gem 'rspec-rails', '~> 3.6'
-  gem 'factory_girl_rails'
+  gem 'factory_girl_rails' # @TODO upgrade to factory_bot https://github.com/thoughtbot/factory_bot/blob/v4.9.0/UPGRADE_FROM_FACTORY_GIRL.md
   gem 'rails-controller-testing'
   gem 'headless'
   gem 'capybara', '>= 2.15'
