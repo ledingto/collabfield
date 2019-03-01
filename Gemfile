@@ -67,7 +67,7 @@ group :test do
 
   # Rspec, Factory Data, Capybara capabilities
   gem 'rspec-rails', '~> 3.6'
-  gem 'factory_girl_rails' # @TODO upgrade to factory_bot https://github.com/thoughtbot/factory_bot/blob/v4.9.0/UPGRADE_FROM_FACTORY_GIRL.md
+  gem 'factory_bot_rails'
   gem 'rails-controller-testing'
   gem 'headless'
   gem 'capybara', '>= 2.15'

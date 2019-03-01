@@ -8,7 +8,7 @@ require 'rspec/rails'
 # Add additional requires below this line. Rails is not loaded until this point!
 
 require 'capybara/poltergeist'
-require 'factory_girl_rails'
+require 'factory_bot_rails'
 require 'capybara/rspec'
 
 # Requires supporting ruby files with custom matchers and macros, etc, in
@@ -64,9 +64,9 @@ RSpec.configure do |config|
     DatabaseCleaner.clean
   end
 
-  # configure Capybara to use poltergeist and puma
+  # configure Capybara to use poltergeist and puma and factory bot
   config.include Devise::Test::IntegrationHelpers, type: :feature
-  config.include FactoryGirl::Syntax::Methods
+  config.include FactoryBot::Syntax::Methods
   Capybara.javascript_driver = :poltergeist
   Capybara.server = :puma
 
